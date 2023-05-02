@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MessageBox demo</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<head>
+<script src="libs/jquery.min.js"></script>
+<script src="libs/messagebox.js"></script>
+</head>
+<body>
+<h1>Example</h1>
+Demo HTML goes here
+<br>
+<br>
+MessageBox demo #1, click <a onclick="MessageBox('Don\'t forget to Donate to support my project.');"><b>here</b></a>.<br>
+MessageBox demo #2, click <a onclick="MessageBox('Message box with info icon.', 'info');"><b>here</b></a>.<br>
+MessageBox demo #3, click <a onclick="MessageBox('Message box with success icon.', 'success');"><b>here</b></a>.<br>
+MessageBox demo #4, click <a onclick="MessageBox('Message box with error icon.', 'error');"><b>here</b></a>.<br>
+MessageBox demo #5, click <a onclick="MessageBox('Redirect to Google when close.', 'info', 'https://google.com');"><b>here</b></a>.<br>
+MessageBox demo #6, click <a onclick="MessageBox('Message box with 1 button and no icon', '', '', 1, 'Ok');"><b>here</b></a>.<br>
+MessageBox demo #7, click <a onclick="MessageBox('Redirect to Yahoo when the button Ok is pressed.', 'info', '', 1, 'Ok', 'http://yahoo.com');"><b>here</b></a>.<br>
+MessageBox demo #8, click <a onclick="MessageBox('Message box with 2 buttons and no icon.', '', '', 2, 'Ok', '', 'Cancel');"><b>here</b></a>.<br>
+MessageBox demo #9, click <a onclick="MessageBox('Redirect to Google when Ok is pressed. Redirect to Yahoo when Cancel is pressed.', '', '', 2, 'Ok', 'http://google.com', 'Cancel', 'https://yahoo.com');"><b>here</b></a>.<br>
+
+<h1>How to use</h1>
+<p>The parameters are the following:</p>
+MessageBox(text, type, close_redirect, buttons, button1_description, button1_redirect, button2_description, button2_redirect)
+<br><br>Where:<br><br>
+<li><b>text</b>: The text you would like to show in the MessageBox.</li>
+<li><b>type</b>: Defines which icon show in the MessageBox. Options are: 'info', 'success' and 'error'. More options can be configured inside the file 'messagebox/css/styles.css'.</li>
+<li><b>close_redirect</b>: URL to open when the MessageBox is closed by clicking the [x] icon. If you would like to call a JavaScript function you can set the value to: 'javascript:alert(123);' for example.</li>
+<li><b>buttons</b>: Defines how many buttons you would like to show in the MessageBox. Valid options are '1', '2' or ''. If this option is empty, no button will be shown.</li>
+<li><b>button1_description</b>: Content to display on the button #1.</li>
+<li><b>button1_redirect</b>: URL to go when the user clicks the button #1.</li>
+<li><b>button2_description</b>: Content to display on the button #2.</li>
+<li><b>button2_redirect</b>: URL to go when the user clicks the button #2.</li>
+</body>
+</html>
